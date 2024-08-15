@@ -30,6 +30,9 @@ if you'd like to add an entry to the list or to make other changes.
 
 ### Bots (Discord)
 
+- [Game Status By Nexeum](https://nexeummanager.com/) - A service that allows you to check the status of your game servers within Discord.
+- [GameStatus](https://github.com/discord-gamestatus/discord-gamestatus) - A open source alternative to Game Status By Nexeum.
+
 ### Infrastructure
 
 - [LinuxGSM](https://linuxgsm.com/) - Manage self-hosted Linux game servers easily.
