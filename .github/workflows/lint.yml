@@ -1,0 +1,43 @@
+name: Lint and Format Markdown Files
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+  pull_request:
+    paths:
+      - '**/*.md'
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: |
+        npm install -g prettier markdownlint-cli
+
+    - name: Run Prettier (formatting)
+      run: |
+        prettier --write "**/*.md"
+
+    - name: Run markdownlint (linting)
+      run: |
+        markdownlint "**/*.md"
+
+    - name: Commit changes (if any)
+      run: |
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
+        git add .
+        git diff-index --quiet HEAD || git commit -m "chore: format markdown files with Prettier"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
