@@ -37,6 +37,7 @@ if you'd like to add an entry to the list or to make other changes.
 
 - [LinuxGSM](https://linuxgsm.com/) - Manage self-hosted Linux game servers easily.
 - [Homepage](https://gethomepage.dev/latest/) - A highly customizable startpage / application dashboard.
+- [Uptime Kuma](https://uptime.kuma.pet/) - A fancy self-hosted monitoring tool
 
 ### Websites
 
