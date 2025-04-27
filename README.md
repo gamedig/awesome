@@ -43,3 +43,4 @@ if you'd like to add an entry to the list or to make other changes.
 ### Websites
 
 - [Is My Game Server Online?](https://ismygameserver.online/) - A simple, free, and easy-to-use tool to check if your game server is online.
+- [Query Game Server](https://query-game-server.vercel.app/) - A modern web app to query game servers using GameDig for all accessible server info.
